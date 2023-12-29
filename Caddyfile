@@ -1,0 +1,9 @@
+(cors) {
+	header Access-Control-Allow-Origin "*"
+	header Access-Control-Allow-Methods "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
+}
+
+[domain] {
+    // import cors
+    reverse_proxy 127.0.0.1:5000
+}
